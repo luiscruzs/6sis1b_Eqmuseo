@@ -266,7 +266,7 @@ public class VentanaAEE extends JFrame {
 		JButton btnNewButton_3 = new JButton("Regresar");
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Bobras ob = new Bobras();
+				Vobras ob = new Vobras();
 				ob.setVisible(true);
 				dispose();
 			}

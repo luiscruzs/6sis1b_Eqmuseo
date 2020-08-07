@@ -27,7 +27,7 @@ import com.mysql.jdbc.Connection;
 import imagen.fondo;
 
 
-public class Bobras extends JFrame {
+public class Vobras extends JFrame {
 	final String CONTROLADOR = "com.mysql.jdbc.Driver";
 	final String URL = "jdbc:mysql://localhost:3306/obras";
 	final String USUARIO = "root";
@@ -69,7 +69,7 @@ public class Bobras extends JFrame {
 			public void run() {
 				try {
 					UIManager.setLookAndFeel("com.jtattoo.plaf.bernstein.BernsteinLookAndFeel");
-					Bobras frame = new Bobras();
+					Vobras frame = new Vobras();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -81,7 +81,7 @@ public class Bobras extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Bobras() {
+	public Vobras() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\crair\\Downloads\\1626195.png"));
 		setTitle("OBRAS DE ARTE");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

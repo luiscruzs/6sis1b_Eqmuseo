@@ -19,8 +19,10 @@ import javax.swing.border.EmptyBorder;
 
 import imagen.fondo;
 
+@SuppressWarnings("serial")
 public class VentanaAcceso extends JFrame {
 
+	@SuppressWarnings("unused")
 	private JPanel contentPane;
 	private JPasswordField cont;
 	private JTextField usu;
@@ -84,16 +86,17 @@ public class VentanaAcceso extends JFrame {
 		
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.addActionListener(new ActionListener() {
+			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent arg0) {
-				//CONTRASEÑA USE1MN USUARIO usetaquilla
-				if(cont.getText().contentEquals("USE1MN") & usu.getText().contentEquals("usetaquilla")) {
+				//CONTRASEÑAprimer campo USUARIO segundo campo
+				if(cont.getText().contentEquals("54321") & usu.getText().contentEquals("taquilla")) {
 					/*taquilla ejem1 = new taquilla();
 					ejem1.setVisible(true);
 					dispose();*/
 				}
 				else
-					if(cont.getText().contentEquals("USE2MN") & usu.getText().contentEquals("useobras")) {
-						Bobras ejem2 = new Bobras();
+					if(cont.getText().contentEquals("123456") & usu.getText().contentEquals("Bobras")) {
+						Vobras ejem2 = new Vobras();
 						ejem2.setVisible(true);
 						dispose();
 					}
